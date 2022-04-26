@@ -1,47 +1,55 @@
 .ttl {
+  color: #363434;
   text-align: center;
-  color:#363434;
 }
-.count{
+
+.count {
   color: #5c5757;
 }
-.app{
-  width:300px;
+
+.app {
+  width: 300px;
   margin: 0 auto;
   text-align: center;
 }
-.hsbtn{
-  background-color: #62929a;
-  color: #fff;
-  border: none;
+
+.hsbtn {
   padding: 8px;
-}
-.addbtn{
+  border: none;
   background-color: #62929a;
   color: #fff;
-  border: none;
+}
+
+.addbtn {
   padding: 3px 8px;
+  border: none;
+  background-color: #62929a;
+  color: #fff;
 }
-.current{
+
+.current {
   padding-left: 28px;
-  text-align: left;
   font-size: 20px;
-}
-ul{
-  padding: 0;
   text-align: left;
-  padding-left: 28px;
 }
-.todolist{
+
+ul {
+  padding: 0;
+  padding-left: 28px;
+  text-align: left;
+}
+
+.todolist {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f2f2f2;
-  padding:0 20px;
   margin-bottom: 10px;
+  padding: 0 20px;
+  background-color: #f2f2f2;
 }
-.trash{
-  color: #ff0000;
+
+.trash {
   border: none;
+  color: #ff0000;
   font-size: 16px;
 }

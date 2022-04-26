@@ -28,9 +28,11 @@
           <input type="text" v-model="addList">
           <button type="submit" :disabled="addList.length === 0" class="addbtn"><i class="fa-solid fa-plus"></i></button>
         </form>
+
+        <p class="current">Current: {{ addList }}</p>
       </div>
 
-      <p class="current">Current:</p>
+     
       <ul>
         <li v-for="(toDoList,index) in toDoLists" class="todolist">
           <h3>{{ index }} <span> : </span>{{ toDoList }}</h3>
