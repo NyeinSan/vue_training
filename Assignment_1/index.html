@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment1</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <h1 class="ttl">{{ title }}</h1>
+
+    <div class="app">
+      <button @click="showForm=!showForm" class="hsbtn">
+        <span v-if="showForm===true">Hide Form</span>
+        <span v-if="showForm===false">Show Form</span>
+      </button>
+
+      <div>
+        <h3 class="count">ToDo Count: {{ toDoLists.length }}</h3>
+
+        <form @submit.prevent="addItem" v-if="showForm">
+          <input type="text" v-model="addList">
+          <button type="submit" :disabled="addList.length === 0" class="addbtn"><i class="fa-solid fa-plus"></i></button>
+        </form>
+      </div>
+
+      <p class="current">Current:</p>
+      <ul>
+        <li v-for="(toDoList,index) in toDoLists" class="todolist">
+          <h3>{{ index }} <span> : </span>{{ toDoList }}</h3>
+          <button class="trash" @click="deleteItem(index)">
+            <i class="fa-solid fa-trash-can"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+    
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>

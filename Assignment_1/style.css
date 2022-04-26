@@ -1,0 +1,47 @@
+.ttl {
+  text-align: center;
+  color:#363434;
+}
+.count{
+  color: #5c5757;
+}
+.app{
+  width:300px;
+  margin: 0 auto;
+  text-align: center;
+}
+.hsbtn{
+  background-color: #62929a;
+  color: #fff;
+  border: none;
+  padding: 8px;
+}
+.addbtn{
+  background-color: #62929a;
+  color: #fff;
+  border: none;
+  padding: 3px 8px;
+}
+.current{
+  padding-left: 28px;
+  text-align: left;
+  font-size: 20px;
+}
+ul{
+  padding: 0;
+  text-align: left;
+  padding-left: 28px;
+}
+.todolist{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding:0 20px;
+  margin-bottom: 10px;
+}
+.trash{
+  color: #ff0000;
+  border: none;
+  font-size: 16px;
+}
