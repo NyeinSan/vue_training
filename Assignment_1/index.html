@@ -34,7 +34,7 @@
 
      
       <ul>
-        <li v-for="(toDoList,index) in toDoLists" class="todolist">
+        <li v-for="(toDoList,index) in toDoLists"  class="todolist">
           <h3>{{ index }} <span> : </span>{{ toDoList }}</h3>
           <button class="trash" @click="deleteItem(index)">
             <i class="fa-solid fa-trash-can"></i>
