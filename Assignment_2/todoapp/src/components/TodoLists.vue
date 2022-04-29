@@ -2,7 +2,7 @@
   <div> 
     <ul>
       <li v-for="(toDoList,index) in toDoLists" :key="index" >
-          <TodoList :toDoList="toDoList" :index="index" @delete-item="deleteTodo"></TodoList>
+          <TodoList :toDoList="toDoList" :index="index" @delete-item="deleteTodo(index)"></TodoList>
       </li>
     </ul>
   </div>
@@ -16,8 +16,8 @@ export default {
   props:['toDoLists'],
   
   methods:{
-    deleteTodo(){
-      this.$emit('delete-item',this.index)
+    deleteTodo(index){
+      this.$emit('delete-item',index)
     }
   }
 }

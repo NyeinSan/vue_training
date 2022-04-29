@@ -1,7 +1,7 @@
 <template>
  <div class="todolist">
     <h3>{{ index }} <span> : </span>{{ toDoList }}</h3>
-    <button class="trash" @click="deleteTodo">
+    <button class="trash" @click="deleteTodo(index)">
       <i class="fa-solid fa-trash-can"></i>
     </button>
  </div>
@@ -12,8 +12,8 @@ export default {
   name:'TodoList',
   props:['toDoList','index'],
   methods:{
-    deleteTodo(){
-      this.$emit('delete-item',this.index)
+    deleteTodo(index){
+      this.$emit('delete-item',index)
     }
   }
 }
