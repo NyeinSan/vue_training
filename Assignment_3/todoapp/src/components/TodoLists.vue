@@ -1,9 +1,7 @@
 <template>
   <div> 
     <ul>
-      <li v-for="(toDoList,index) in toDoLists" :key="index" >
-        <TodoList :toDoList="toDoList" :index="index" @delete-item="deleteTodo(index)"></TodoList>
-      </li>
+      <TodoList></TodoList>
     </ul>
   </div>
 </template>
@@ -13,13 +11,6 @@ import TodoList from './TodoList'
 export default {
   components: { TodoList },
   name:'todoLists',
-  props:['toDoLists'],
-  
-  methods:{
-    deleteTodo(index){
-      this.$emit('delete-item',index)
-    }
-  }
 }
 </script>
 
@@ -30,7 +21,5 @@ ul {
   text-align: left;
   list-style-type: none;
 }
-
-
 
 </style>
