@@ -17,6 +17,7 @@ export default {
     }
   },
   methods:{
+    //add newitem to todolists action from store & clear inputvalue
     addItem(newItem){
       this.$store.dispatch("addItem",newItem);
       this.newItem='';

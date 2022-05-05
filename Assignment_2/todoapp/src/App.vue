@@ -31,12 +31,15 @@ export default {
     }
   },
   methods:{
+    //add newitem to todolists
     insertItem(item){
       this.toDoLists.push(item)
     },
+    //delete item from todolists
     deleteItem(index) {
       this.toDoLists.splice(index, 1);
     },
+    //hide or show input form
     toggle() {
       this.toggleForm = !this.toggleForm;
     }

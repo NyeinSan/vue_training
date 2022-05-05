@@ -17,6 +17,7 @@ export default {
     }
   },
   methods:{
+    //to add item,send data to app.vue and clear input value
     addItem(){
       this.$emit('create-item',this.newItem);
       this.newItem='';

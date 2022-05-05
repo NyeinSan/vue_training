@@ -11,6 +11,7 @@ import ToggleButton from './ToggleButton'
 export default {
   components: { ToggleButton },
   computed:{
+    //get title from store
     ...mapGetters(['getTitle'])
   },
 }

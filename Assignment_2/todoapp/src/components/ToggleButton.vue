@@ -10,6 +10,7 @@
 export default {
   name:'ToggleBtn',
   methods:{
+    //to hide and show toggle form,send data to ToDoHeader.vue
     toggle() {
       this.$emit("toggle");
     }

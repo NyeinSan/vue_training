@@ -25,6 +25,7 @@ export default {
     ToDoHeader,
   },
   computed:{
+    //get todolists and toggleform data from store
     ...mapGetters(['toDoLists','toggleForm'])
   },
  

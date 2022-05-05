@@ -16,6 +16,7 @@ export default {
   props:['toDoLists'],
   
   methods:{
+    //to delete iteem from todolist,send data to app.vue
     deleteTodo(index){
       this.$emit('delete-item',index)
     }

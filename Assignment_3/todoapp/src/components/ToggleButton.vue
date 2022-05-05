@@ -12,9 +12,11 @@ import { mapGetters,mapActions } from 'vuex';
 export default {
   name:'ToggleBtn',
   computed:{
+    //get hide or show data from store
     ...mapGetters(['toggleForm'])
   },
   methods:{
+    //hide and show input form
     ...mapActions(['toggle'])
   },
 }

@@ -14,9 +14,11 @@ import {  mapGetters,mapActions } from 'vuex'
 export default {
   name:'TodoList',
   computed:{
+    //get todolists from store
     ...mapGetters(['toDoLists'])
   },
   methods:{
+    //delete action from store 
     ...mapActions(['deleteItem'])
   },
 }

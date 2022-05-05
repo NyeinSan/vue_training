@@ -15,6 +15,7 @@ export default {
   name:'ToDoHeader',
   props:['title','toggleForm'],
   methods:{
+    //to hide and show toggle form,send data to app.vue
     toggle() {
       this.$emit("toggle");
     }
