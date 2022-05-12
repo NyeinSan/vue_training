@@ -28,6 +28,7 @@ export default {
   margin-bottom: 10px;
   padding: 0 20px;
   background-color: #f2f2f2;
+  
 }
 .trash {
   border: none;
